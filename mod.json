@@ -1,0 +1,11 @@
+{
+  "geode": "4.10.2",
+  "gd": {
+    "android": "2.208"
+  },
+  "id": "yoterblx.anglelock",
+  "name": "Angle Lock",
+  "version": "1.0.0",
+  "developer": "YoteRblx",
+  "description": "Locks the player icon at a chosen angle."
+}
