@@ -13,10 +13,10 @@ jobs:
       matrix:
         config:
           - name: Android64
-            os: ubuntu-latest
+            os: windows-latest
             target: Android64
           - name: Android32
-            os: ubuntu-latest
+            os: windows-latest
             target: Android32
 
     name: ${{ matrix.config.name }}
@@ -29,5 +29,3 @@ jobs:
         uses: geode-sdk/build-geode-mod@main
         with:
           target: ${{ matrix.config.target }}
-          combine: true
-          ccache-variant: none # This explicitly tells the compiler to skip caching using a valid keyword!
