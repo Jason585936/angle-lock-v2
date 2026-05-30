@@ -29,4 +29,5 @@ jobs:
         uses: geode-sdk/build-geode-mod@main
         with:
           target: ${{ matrix.config.target }}
-          ccache-variant: ccache  # Force-sets the correct caching tool for Linux
+          ccache-variant: ""  # Correct format to completely shut down the failing caching system
+          use-cpm-cache: false # Disables secondary dependency caching
