@@ -1,5 +1,5 @@
 {
-  "geode": "4.10.2",
+  "geode": "3.0.0-beta.1",
   "gd": {
     "android": "2.208"
   },
@@ -8,4 +8,3 @@
   "version": "1.0.0",
   "developer": "YoteRblx",
   "description": "Locks the player icon at a chosen angle."
-}
