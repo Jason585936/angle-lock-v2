@@ -29,3 +29,5 @@ jobs:
         uses: geode-sdk/build-geode-mod@main
         with:
           target: ${{ matrix.config.target }}
+          combine: true
+          cache: false # This turns off the broken caching feature causing the crash!
