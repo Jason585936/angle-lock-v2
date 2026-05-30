@@ -21,8 +21,8 @@ A Geometry Dash Geode mod that allows players to lock their icon at a custom ang
 
 ## Credits
 
-- UnlimitedSpace (Redders) — Helper
-- YoteRblx — Co-Developer
+- UnlimitedSpace — Helper
+- YoteRblx — Co-Developer & Publisher
 - John (No GD Account) — Developer
 - Geode Team — Geode SDK & Mod Loader
 
