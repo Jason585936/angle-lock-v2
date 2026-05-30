@@ -30,4 +30,4 @@ jobs:
         with:
           target: ${{ matrix.config.target }}
           combine: true
-          cache: false # This turns off the broken caching feature causing the crash!
+          ccache-variant: none # This explicitly tells the compiler to skip caching using a valid keyword!
