@@ -6,6 +6,9 @@ on:
       - main
   pull_request:
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true # Clears the Node deprecation error
+
 jobs:
   build:
     strategy:
@@ -13,10 +16,10 @@ jobs:
       matrix:
         config:
           - name: Android64
-            os: windows-latest
+            os: windows-2022 # Forces the runner to a highly stable Windows environment
             target: Android64
           - name: Android32
-            os: windows-latest
+            os: windows-2022
             target: Android32
 
     name: ${{ matrix.config.name }}
@@ -29,3 +32,4 @@ jobs:
         uses: geode-sdk/build-geode-mod@main
         with:
           target: ${{ matrix.config.target }}
+          ccache-variant: "" # Bypasses the caching path validation failure completely
